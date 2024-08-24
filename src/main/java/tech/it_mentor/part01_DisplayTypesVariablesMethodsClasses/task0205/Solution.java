@@ -1,4 +1,4 @@
-package task0205;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0205;
 
 /* 
 Прибавка к зарплате
@@ -26,6 +26,6 @@ public class Solution {
     }
 
     public static void hackSalary(int salary) {
-        // напишите тут ваш код
+        System.out.printf("Твоя зарплата составляет: %d долларов в месяц.", salary+100);
     }
 }
