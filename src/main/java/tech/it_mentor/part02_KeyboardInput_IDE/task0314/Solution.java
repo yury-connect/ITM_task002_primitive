@@ -1,4 +1,4 @@
-package task0314;
+package tech.it_mentor.part02_KeyboardInput_IDE.task0314;
 
 /* 
 Выведи на экран таблицу умножения 10 на 10 в следующем виде:
@@ -18,7 +18,11 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.printf("%d\t", i * j);
+            }
+            System.out.println();
+        }
     }
 }
