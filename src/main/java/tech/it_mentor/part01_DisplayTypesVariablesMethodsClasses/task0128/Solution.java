@@ -1,4 +1,4 @@
-package task0128;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0128;
 
 /* 
 Просто, как 2+2
@@ -17,7 +17,7 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        sum(2, 2);
     }
 
     public static void sum(int a, int b) {
