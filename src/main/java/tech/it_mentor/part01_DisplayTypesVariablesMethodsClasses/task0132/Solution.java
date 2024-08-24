@@ -1,4 +1,4 @@
-package task0132;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0132;
 
 /* 
 Сумма цифр трехзначного числа
@@ -25,6 +25,13 @@ public class Solution {
     }
 
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
+
+        int d1 = number % 10;
+        number /= 10;
+
+        int d2 = number % 10;
+        number /= 10;
+
+        return d1 + d2 + number;
     }
 }
