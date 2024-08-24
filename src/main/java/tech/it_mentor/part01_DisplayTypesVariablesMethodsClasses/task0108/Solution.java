@@ -1,4 +1,4 @@
-package task0108;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0108;
 
 /* 
 2 + 3 = 5
@@ -19,15 +19,15 @@ public class Solution {
         int a = 3;
         int b = 2;
 
-        System.out.print("два");
+//        System.out.print("два");
         System.out.print(b);
         System.out.print(" плюс ");
-        System.out.print(" минус ");
+//        System.out.print(" минус ");
         System.out.print(a);
-        System.out.print("три");
+//        System.out.print("три");
         System.out.print(" равно ");
-        System.out.print(" будет ");
-        System.out.print("пять");
+//        System.out.print(" будет ");
+//        System.out.print("пять");
         System.out.print(a + b);
     }
 }
