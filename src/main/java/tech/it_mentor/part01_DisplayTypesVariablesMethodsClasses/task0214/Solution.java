@@ -1,4 +1,4 @@
-package task0214;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0214;
 
 /* 
 Минимум двух чисел
@@ -17,7 +17,7 @@ Requirements:
 
 public class Solution {
     public static int min(int a, int b) {
-        //напишите тут ваш код
+        return a > b ? b : a;
     }
 
     public static void main(String[] args) {
