@@ -1,4 +1,4 @@
-package task0130;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0130;
 
 /* 
 Наш первый конвертер!
@@ -26,8 +26,6 @@ public class Solution {
     }
 
     public static double convertCelsiusToFahrenheit(int celsius) {
-        //напишите тут ваш код
-
-        return 0;
+        return celsius * 9 / 5 + 32;
     }
 }
