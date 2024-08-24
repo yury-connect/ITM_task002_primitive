@@ -1,4 +1,4 @@
-package task0107;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0107;
 
 /* 
 Комментарии излишни
@@ -19,7 +19,7 @@ public class Solution {
         int y = 12;
 
         // y = x * y;
-        // y = x + y;
+        y = x + y;
 
         x = y - x;
         y = y - x;
