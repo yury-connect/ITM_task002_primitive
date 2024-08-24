@@ -1,4 +1,4 @@
-package task0318;
+package tech.it_mentor.part02_KeyboardInput_IDE.task0318;
 
 /* 
 План по захвату мира
@@ -23,9 +23,13 @@ Requirements:
 */
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        // Напишите ваш код здесь
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.next();
+        int count = scanner.nextInt();
+        System.out.printf("%s захватит мир через %d лет. Му-ха-ха!", name, count);
     }
 }
