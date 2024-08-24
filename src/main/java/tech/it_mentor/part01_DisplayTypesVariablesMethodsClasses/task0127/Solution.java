@@ -1,4 +1,4 @@
-package task0127;
+package tech.it_mentor.part01_DisplayTypesVariablesMethodsClasses.task0127;
 
 /* 
 Число в квадрате
@@ -17,7 +17,7 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        System.out.println(sqr(5));
     }
 
     public static int sqr(int a) {
