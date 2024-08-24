@@ -1,7 +1,8 @@
-package task0319;
+package tech.it_mentor.part02_KeyboardInput_IDE.task0319;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Предсказание на будущее
@@ -24,7 +25,12 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
 
+        String name = scanner.next();
+        int target = scanner.nextInt();
+        int count = scanner.nextInt();
+
+        System.out.printf("%s получает %d через %d лет.", name, target, count);
     }
 }
