@@ -1,4 +1,4 @@
-package task0411;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0411;
 
 /* 
 Время года
@@ -27,7 +27,31 @@ public class Solution {
     }
 
     public static void checkSeason(int month) {
-        //напишите тут ваш код
-
+        String result;
+        switch (month) {
+            case 12:
+            case 1:
+            case 2:
+                result = "зима";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                result = "весна";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                result = "лето";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                result = "осень";
+                break;
+            default:
+                result = "Ошибка во входных данных";
+        }
+        System.out.println(result);
     }
 }
