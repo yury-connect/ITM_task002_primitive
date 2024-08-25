@@ -1,4 +1,4 @@
-package task0410;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0410;
 
 /* 
 Попадём-не-попадём
@@ -28,7 +28,16 @@ public class Solution {
     }
 
     public static void checkInterval(int number) {
-        //напишите тут ваш код
+        final int min = 50;
+        final int max = 100;
 
+        StringBuilder result = new StringBuilder("Число ");
+        result.append(number);
+        if (number < min || number > max) {
+            result.append(" не");
+        }
+        result.append(" содержится в интервале.");
+
+        System.out.println(result);
     }
 }
