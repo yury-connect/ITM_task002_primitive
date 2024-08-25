@@ -1,4 +1,4 @@
-package task0413;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0413;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -24,7 +24,36 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        int numDayWeek = Integer.parseInt(bufferedReader.readLine());
 
+        String nameDayWeek;
+        switch (numDayWeek) {
+            case 1:
+                nameDayWeek = "понедельник";
+                break;
+            case 2:
+                nameDayWeek = "вторник";
+                break;
+            case 3:
+                nameDayWeek = "среда";
+                break;
+            case 4:
+                nameDayWeek = "четверг";
+                break;
+            case 5:
+                nameDayWeek = "пятница";
+                break;
+            case 6:
+                nameDayWeek = "суббота";
+                break;
+            case 7:
+                nameDayWeek = "воскресенье";
+                break;
+            default:
+                nameDayWeek = "такого дня недели не существует";
+        }
+
+        System.out.println(nameDayWeek);
     }
 }
