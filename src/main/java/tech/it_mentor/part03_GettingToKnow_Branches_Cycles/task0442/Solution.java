@@ -2,6 +2,7 @@ package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0442;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Суммирование
@@ -26,7 +27,18 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
 
+        int result = 0;
+        boolean isContinue = true;
+        do {
+            int current = scanner.nextInt();
+            result += current;
+            if (current == -1) {
+                isContinue = false;
+            }
+        } while (isContinue);
+
+        System.out.println(result);;
     }
 }
