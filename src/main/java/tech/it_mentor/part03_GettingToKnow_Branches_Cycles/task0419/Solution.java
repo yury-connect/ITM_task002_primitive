@@ -17,7 +17,24 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
+//        int[] numArr = bufferedReader.lines().mapToInt(Integer::parseInt).toArray(); // чтобы закончить ввод с клавиатуры:  'ctrl' + 'd'
+
+        // Используем Stream и фильтруем пустую строку для завершения
+        int[] numArr = bufferedReader.lines().takeWhile(line -> !line.isEmpty()).mapToInt(Integer::parseInt).toArray();
+
+        // Закрываем BufferedReader
+        bufferedReader.close();
+
+        int max = numArr[0];
+        for (int i = 1; i < numArr.length; i++) {
+            if (numArr[i] > max) {
+                max = numArr[i];
+            }
+        }
+        System.out.println(max);
     }
 }
+
+
