@@ -1,7 +1,9 @@
-package task0416;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0416;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Locale;
+import java.util.Scanner;
 
 /* 
 Переходим дорогу вслепую
@@ -40,7 +42,25 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Locale.setDefault(Locale.ENGLISH);
 
+        final double greenInterval = 3.0;
+        final double yellowInterval = 1.0;
+        final double redInterval = 1.0;
+
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//        final double time = Double.parseDouble(bufferedReader.readLine());
+
+        final double time = new Scanner(System.in).nextDouble();
+
+        double interval = time % (greenInterval + yellowInterval + redInterval);
+
+        if (interval >= greenInterval + yellowInterval) {
+            System.out.println("красный");
+        } else if (interval >= greenInterval) {
+            System.out.println("жёлтый");
+        } else {
+            System.out.println("зелёный");
+        }
     }
 }
