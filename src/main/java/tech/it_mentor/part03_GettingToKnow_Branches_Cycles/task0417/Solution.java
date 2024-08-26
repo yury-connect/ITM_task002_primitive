@@ -38,7 +38,14 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int[] numArr = bufferedReader.lines().mapToInt(Integer::parseInt).toArray(); // чтобы закончить ввод с клавиатуры:  'ctrl' + 'd'
+//        int[] numArr = bufferedReader.lines().mapToInt(Integer::parseInt).toArray(); // чтобы закончить ввод с клавиатуры:  'ctrl' + 'd'
+
+
+        // Используем Stream и фильтруем пустую строку для завершения
+        int[] numArr = bufferedReader.lines().takeWhile(line -> !line.isEmpty()).mapToInt(Integer::parseInt).toArray();
+
+        // Закрываем BufferedReader
+        bufferedReader.close();
 
         StringBuilder result = new StringBuilder();
         boolean isContinue = true;
