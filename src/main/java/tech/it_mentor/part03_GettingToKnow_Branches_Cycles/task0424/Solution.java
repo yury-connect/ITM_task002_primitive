@@ -2,6 +2,7 @@ package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0424;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Три числа
@@ -23,7 +24,21 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+        int num3 = scanner.nextInt();
 
+        if (num1 == num2 && num2 == num3){
+            System.out.println("");
+        } else if (num1 == num2) {
+            System.out.println(3);
+        } else if (num1 == num3) {
+            System.out.printf("2");
+        } else if (num2 == num3) {
+            System.out.printf("1");
+        } else {
+            System.out.println("");
+        }
     }
 }
