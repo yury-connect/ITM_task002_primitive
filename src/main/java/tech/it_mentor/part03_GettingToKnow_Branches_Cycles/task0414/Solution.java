@@ -1,7 +1,8 @@
-package task0414;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0414;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Количество дней в году
@@ -30,7 +31,21 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//        final int year = Integer.parseInt(bufferedReader.readLine());
 
+        final int year = new Scanner(System.in).nextInt();
+
+        boolean isLeapYear;
+        if (year % 400 == 0) {
+            isLeapYear = true;
+        } else if (year % 100 == 0) {
+            isLeapYear = false;
+        } else if (year % 4 == 0) {
+            isLeapYear = true;
+        } else {
+            isLeapYear = false;
+        }
+        System.out.printf("%d", isLeapYear ? 366 : 365);
     }
 }
