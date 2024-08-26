@@ -9,4 +9,28 @@
   <name>Archetype - ITM_task002_primitive</name>
   <url>http://maven.apache.org</url>
 
+  <!--  Разработчики (<developers>):-->
+  <developers>
+    <developer>
+      <id>LapitskiYury</id>
+      <name>Lapitski Yury</name>
+      <email>yury.connect@gmail.com</email>
+      <roles>
+        <role>developer</role>
+        <role>maintainer</role>
+      </roles>
+      <timezone>+2</timezone>
+      <properties>
+        <phone>+375291056708</phone>
+        <viber>+375291056708</viber>
+        <whatsapp>+375291056708</whatsapp>
+      </properties>
+    </developer>
+  </developers>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
 </project>

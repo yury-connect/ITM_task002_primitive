@@ -2,6 +2,7 @@ package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0426;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Ярлыки и числа
@@ -31,7 +32,23 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
 
+        StringBuilder result = new StringBuilder();
+        if (num == 0) {
+            result.append("ноль");
+        } else {
+            if (num > 0) {
+                result.append("положительное ");
+            } else {
+                result.append("отрицательное ");
+            }
+            if (num % 2 != 0) {
+                result.append("не");
+            }
+            result.append("четное число");
+        }
+        System.out.println(result);
     }
 }
