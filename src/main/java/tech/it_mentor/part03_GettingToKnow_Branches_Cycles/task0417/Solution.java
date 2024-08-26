@@ -1,7 +1,9 @@
-package task0417;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0417;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /* 
 Существует ли пара?
@@ -34,7 +36,25 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
+        int[] numArr = bufferedReader.lines().mapToInt(Integer::parseInt).toArray(); // чтобы закончить ввод с клавиатуры:  'ctrl' + 'd'
+
+        StringBuilder result = new StringBuilder();
+        boolean isContinue = true;
+        for (int i = 0; i < numArr.length && isContinue; i++) {
+            for (int j = i + 1; j < numArr.length; j++) {
+                if (numArr[i] == numArr[j]) {
+                    if (isContinue) {
+                        result.append(numArr[i]);
+                        isContinue = false;
+                    }
+                    result.append(" ");
+                    result.append(numArr[j]);
+                }
+            }
+        }
+
+        System.out.println(result.toString());
     }
 }

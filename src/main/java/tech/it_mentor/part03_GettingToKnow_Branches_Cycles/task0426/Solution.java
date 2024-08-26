@@ -1,4 +1,4 @@
-package task0426;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0426;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

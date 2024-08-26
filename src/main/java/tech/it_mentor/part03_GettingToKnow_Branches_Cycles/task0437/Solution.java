@@ -1,4 +1,4 @@
-package task0437;
+package tech.it_mentor.part03_GettingToKnow_Branches_Cycles.task0437;
 
 /* 
 Треугольник из восьмерок
