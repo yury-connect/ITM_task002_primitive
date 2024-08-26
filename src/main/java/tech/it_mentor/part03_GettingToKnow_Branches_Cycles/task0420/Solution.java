@@ -18,7 +18,22 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        int[] numArr = bufferedReader.lines().takeWhile(line -> !line.isEmpty()).mapToInt(Integer::parseInt).toArray();
+        bufferedReader.close();
 
+        for (int i = 0; i < numArr.length; i++) {
+            for (int j = 0; j < numArr.length; j++) {
+                if (numArr[i] > numArr[j]) {
+                    int tmp = numArr[i];
+                    numArr[i] = numArr[j];
+                    numArr[j] = tmp;
+                }
+            }
+        }
+
+        for (int item: numArr) {
+            System.out.print(item + " ");
+        }
     }
 }
